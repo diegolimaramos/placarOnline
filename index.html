@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placar Online</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>PLACAR ONLINE</h1>
+
+    <div class="scores">
+      <div class="card-player">
+        <h2 class="card-title">PLAYER 1</h2>
+        <div class="result">
+          <span id="scorePlayer1">0</span>
+        </div>
+        <button id="btnWinnerPlayer1" class="btn btn-winner">VENCEDOR</button>
+      </div>
+
+      <span>VS</span>
+
+      <div class="card-player">
+        <h2 class="card-title">PLAYER 2</h2>
+        <div class="result">
+          <span id="scorePlayer2">0</span>
+        </div>
+        <button id="btnWinnerPlayer2" class="btn btn-winner">VENCEDOR</button>
+      </div>
+    </div>
+
+    <a onclick="reset()" class="btn">REINICIAR CONTAGEM</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
